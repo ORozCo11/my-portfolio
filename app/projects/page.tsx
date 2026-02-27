@@ -1,12 +1,8 @@
 export default function Projects() {
   return (
-    <div className="p-10">
-      <h1 className="text-3xl font-bold">Projects</h1>
-      <ul className="mt-4 space-y-2">
-        <li>✔ Simple Calculator (JavaScript)</li>
-        <li>✔ Portfolio Website (Next.js)</li>
-        <li>✔ Certificates from freeCodeCamp & Google Digital Garage</li>
-      </ul>
-    </div>
+    <main className="p-8">
+      <h1 className="text-2xl font-bold">Projects</h1>
+      <p className="mt-4">Here you’ll find the projects I’ve been working on.</p>
+    </main>
   );
 }
