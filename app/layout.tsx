@@ -1,10 +1,17 @@
-import "./globals.css";
-import Navbar from "./components/Navbar";
+import './globals.css';
+import { Inter } from 'next/font/google';
+import Navbar from './components/Navbar';
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+const inter = Inter({ subsets: ['latin'] });
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" className="dark">
+      <body className={`${inter.className} bg-[#09090b] text-zinc-100 antialiased`}>
         <Navbar />
         {children}
       </body>
