@@ -1,8 +1,6 @@
-import './globals.css';
-import { Inter } from 'next/font/google';
-import Navbar from '../components/Navbar';
-
-const inter = Inter({ subsets: ['latin'] });
+import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function RootLayout({
   children,
@@ -10,10 +8,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
-      <body className={`${inter.className} bg-[#09090b] text-zinc-100 antialiased`}>
+    <html lang="en" className="scroll-smooth">
+      <body className="bg-black text-zinc-200">
         <Navbar />
+        
         {children}
+        
+        <Footer />
       </body>
     </html>
   );
