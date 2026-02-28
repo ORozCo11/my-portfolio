@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import TechStack from './components/TechStack';
+import TechStack from '../components/TechStack';
 
 export default function Home() {
   return (
